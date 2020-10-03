@@ -1,0 +1,118 @@
+body{
+    font-family: "Roboto";
+    position:absolute;
+    top:0;
+    height:100%;
+    width:100%;
+    overflow:hidden;
+}
+body>header{
+    position:relative;
+    top:0;
+    width:98%;
+    height:5%;
+}
+header>img{
+    position:relative;
+    height:100%;
+}
+header>img[id="Menu"]{
+    float:right;
+    cursor:pointer;
+}
+body>div[class="buttons"]{
+    position:absolute;
+    top:20%;
+    left:25%;
+    height:60%;
+    width:50%;
+    overflow:hidden;
+}
+div[class="buttons"]>button{
+    font-size:auto; 
+    color:orangered;
+    background-color:white;
+    font-weight:bolder;
+    transition-duration: 0.5s;
+    overflow:hidden;
+}
+button[class="Input"]{
+    position:relative;
+    width:20vw;
+    min-height:10vh; 
+}
+#A,#NA{
+    left:15%;
+}
+#O,#NA{
+    top:25%;
+}
+button[class="Output"]{
+    position:absolute;
+    left:37%;
+    min-width:10vw;
+    min-height:5vh;      
+}
+#S{
+    top:70%;
+}
+#V{
+    top:80%;
+}
+div[class="Menu"]{
+    position: absolute;
+    top:10%;
+    left:75%;
+    width:23%;
+    height:90%;
+}
+div[class="Menu"]>button{
+    position:relative;
+    border:2px orangered solid;
+    color:orangered;
+    font-weight: bolder;   
+    font-size:auto; 
+    width:99%;
+    min-height:20%;
+    background-color:white;
+    transition-duration: 0.5s;    
+}
+#wafer{
+    position:absolute;
+    top:0;
+    height:100vh;
+    width:100vw;  
+    background-color:rgba(0, 0, 0, 0.5);
+}
+#popup{
+    position:relative;
+    background-color:white;
+    border:10px orangered solid;
+    text-align:center;
+    font-weight:bolder;
+    left:35%;
+    top:30%;
+    width:25%;
+    min-height:20vh;
+}
+#popup>button{
+    border:2px orangered solid;
+    color:orangered;
+    background-color:white;
+    font-weight:bolder;
+    min-width:25%;
+    min-height:auto;
+    transition-duration: 0.7s;
+}
+button:enabled{
+    border:2px orangered solid;
+    cursor:pointer;
+}
+button:disabled{
+    border:2px black solid;
+    cursor:not-allowed;
+}
+button:enabled:hover{
+    background-color:orangered;
+    color:white;
+}
